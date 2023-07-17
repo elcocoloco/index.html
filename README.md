@@ -80,7 +80,7 @@
                 <div class="w3-bar" style="padding-left: 350px;padding-right: 150px;">
                     <button onclick="btn_click_predict(this)" class="btn btn-default w3-left">Predict</button>
                 </div>
-                <div class="w3-bar" style="padding-top: 30px;padding-left: 100px;padding-right: 100px;">
+                <div class="w3-bar" style="padding-top: 30px;padding-left: 0px;padding-right: 0px;">
                     <div class="w3-half" style="padding: 15px;">
                         <span style="font-size: 18px;">Response From Model</span>
                         <div class="w3-bar " style="border: 1px solid lightblue; border-radius: 10px; padding: 20px;">
