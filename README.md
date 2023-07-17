@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="w3-half" style="min-height: 880px;padding: 10px;">
-            <div id="id_hide_if_api_key_embedded" class="w3-bar w3-show">
+            <div id="id_hide_if__embedded" class="w3-bar w3-show">
                 <div class="w3-bar">
                     <h3>API Key</h3>
                 </div>
@@ -147,11 +147,11 @@
     var apikey = "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb"
     var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU"
     if (apikey == "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb" && accesstoken == "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU") {
-        itm = document.getElementById("id_hide_if_api_key_embedded")
+        itm = document.getElementById("id_hide_if__embedded")
         itm.className = itm.className.replace("w3-hide", "w3-show")
     }
     else {
-        itm = document.getElementById("id_hide_if_api_key_embedded")
+        itm = document.getElementById("id_hide_if__embedded")
         itm.className = itm.className.replace("w3-show", "w3-hide")
     }
     document.getElementById("apikey").value = apikey
@@ -168,9 +168,9 @@
         itm.className = itm.className.replace("w3-show", "w3-hide")
     }
     function btn_click_predict(e) {
-        apikey = document.getElementById("apikey").value
-        accesstoken = document.getElementById("accesstoken").value
-        if (apikey == "_apikey_") {
+        apikey = document.getElementById("94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb").value
+        accesstoken = document.getElementById("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU").value
+        if (apikey == "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb") {
             show()
             itm = document.getElementById("id_mlos_predict_log")
             spn = document.createElement("div")
