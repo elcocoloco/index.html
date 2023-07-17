@@ -20,7 +20,7 @@
                 title="Braintoy Logo" width="200" />
         </div>
         <div style="float: right; width: 50%; ">
-            <span style="color: white; float: right; font-size: 30px;"> FX2 </span>
+            <span style="color: white; float: right; font-size: 30px;"> Foreign Exchange Prediction Tool </span>
         </div>
     </div>
     <div class="w3-bar" style=" padding: 20px;">
