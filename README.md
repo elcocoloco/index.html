@@ -47,13 +47,23 @@
                         <div id="id_mlos_prediction">
                             <div class="form-group">
                                 <label for="apikey">apikey:</label>
-                                <input type="password" value="_94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb_" id="apikey" class="form-control" name="apikey">
-                            </div>
+                                <input type="password" id="apikey" class="form-control" name="apikey">
+                                </div>
                             <div class="form-group">
                                 <label for="accesstoken">accesstoken:</label>
-                                <input type="password" value="_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU_" id="accesstoken" class="form-control"
-                                    name="accesstoken">
+                                <input type="password" id="accesstoken" class="form-control" name="accesstoken">
                             </div>
+
+<script>
+    // Get the input elements
+    var apikeyInput = document.getElementById('apikey');
+    var accessTokenInput = document.getElementById('accesstoken');
+
+    // Set the pre-filled values
+    apikeyInput.value = '94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb';
+    accessTokenInput.value = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU';
+</script>
+
                         </div>
                     </div>
                 </div>
