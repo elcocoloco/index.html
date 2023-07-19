@@ -146,7 +146,11 @@
     var data_domain = "table"
     var apikey = "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb"
     var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU"
+<<<<<<< HEAD
    \* if (apikey == "_apikey_" && accesstoken == "_accesstoken_") {
+=======
+    if (apikey == "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb" && accesstoken == "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU") {
+>>>>>>> parent of ffa7407 (Update README.md)
         itm = document.getElementById("id_hide_if_api_key_embedded")
         itm.className = itm.className.replace("w3-hide", "w3-show")
     }
