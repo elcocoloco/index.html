@@ -47,11 +47,11 @@
                         <div id="id_mlos_prediction">
                             <div class="form-group">
                                 <label for="apikey">apikey:</label>
-                                <input type="password" value="_apikey_" id="apikey" class="form-control" name="apikey">
+                                <input type="password" value="13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89" id="apikey" class="form-control" name="apikey">
                             </div>
                             <div class="form-group">
                                 <label for="accesstoken">accesstoken:</label>
-                                <input type="password" value="_accesstoken_" id="accesstoken" class="form-control"
+                                <input type="password" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJEQVdlYnNpdGUzIjoiREFXZWJzaXRlM19rZHVib3ZldHNreWlnbWFpbGNvbV83Nzk4YTk1N2NjMzA0NDg4ODFmNWMxNjVkOTQzYmUyNyJ9.lzw5Y-ZyYAaLV50HcXfDMzpgJsngM_B2mFO7ABqbDv8" id="accesstoken" class="form-control"
                                     name="accesstoken">
                             </div>
                         </div>
@@ -146,8 +146,8 @@
     var feature_list = {"columns": ["EURUSD_Open", "EURUSD_Close", "USDJPY_Open", "USDJPY_Close", "GBPUSD_Open", "GBPUSD_Close", "EURGBP_Open", "EURGBP_Close", "EURCAD_Open", "EURCAD_Close", "USDCNY_Open", "USDCNY_Close", "USDINR_Open", "USDINR_Close"], "index": [0, 1, 2], "data": [[1.2033983469, 1.1965013742, 109.8300018311, 109.1699981689, 1.7238109112, 1.7185969353, 0.6973999739, 0.6956999898, 1.5615999699, 1.5595999956, 8.2670001984, 8.2672014236, 45.7089996338, 45.7099990845], [1.1961007118, 1.2088974714, 109.1800003052, 108.7300033569, 1.7190104723, 1.7303134203, 0.6955999732, 0.6980000138, 1.5598000288, 1.5670000315, 8.2572002411, 8.2672014236, 45.7089996338, 45.6290016174], [1.208999753, 1.2122975588, 108.7300033569, 108.3000030518, 1.7304929495, 1.7281005383, 0.6988000274, 0.700699985, 1.5664999485, 1.5758999586, 8.2672014236, 8.2671003342, 45.6319999695, 45.5499992371]]}
     var data_domain = "table"
     var apikey = "13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89"
-    var accesstoken = "_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJEQVdlYnNpdGUzIjoiREFXZWJzaXRlM19rZHVib3ZldHNreWlnbWFpbGNvbV83Nzk4YTk1N2NjMzA0NDg4ODFmNWMxNjVkOTQzYmUyNyJ9.lzw5Y-ZyYAaLV50HcXfDMzpgJsngM_B2mFO7ABqbDv8"
-    if (apikey == "_apikey_" && accesstoken == "_accesstoken_") {
+    var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJEQVdlYnNpdGUzIjoiREFXZWJzaXRlM19rZHVib3ZldHNreWlnbWFpbGNvbV83Nzk4YTk1N2NjMzA0NDg4ODFmNWMxNjVkOTQzYmUyNyJ9.lzw5Y-ZyYAaLV50HcXfDMzpgJsngM_B2mFO7ABqbDv8"
+    if (apikey == "13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89" && accesstoken == "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJEQVdlYnNpdGUzIjoiREFXZWJzaXRlM19rZHVib3ZldHNreWlnbWFpbGNvbV83Nzk4YTk1N2NjMzA0NDg4ODFmNWMxNjVkOTQzYmUyNyJ9.lzw5Y-ZyYAaLV50HcXfDMzpgJsngM_B2mFO7ABqbDv8") {
         itm = document.getElementById("id_hide_if_api_key_embedded")
         itm.className = itm.className.replace("w3-hide", "w3-show")
     }
@@ -171,7 +171,7 @@
     function btn_click_predict(e) {
         apikey = document.getElementById("apikey").value
         accesstoken = document.getElementById("accesstoken").value
-        if (apikey == "_apikey_") {
+        if (apikey == "13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89") {
             show()
             itm = document.getElementById("id_mlos_predict_log")
             spn = document.createElement("div")
