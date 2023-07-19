@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title> FX2 WhatsApp World </title>
+    <title> FX2 </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
                 title="Braintoy Logo" width="200" />
         </div>
         <div style="float: right; width: 50%; ">
-            <span style="color: white; float: right; font-size: 30px;"> Foreign Exchange Prediction Tool </span>
+            <span style="color: white; float: right; font-size: 30px;"> FX Closing Price Prediction </span>
         </div>
     </div>
     <div class="w3-bar" style=" padding: 20px;">
@@ -51,7 +51,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="accesstoken">accesstoken:</label>
-                                <input type="password" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU" id="accesstoken" class="form-control" name="accesstoken">
+                                <input type="password" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU" id="accesstoken" class="form-control"
+                                    name="accesstoken">
                             </div>
                         </div>
                     </div>
@@ -69,7 +70,7 @@
                 <div class="w3-bar" style="padding-left: 350px;padding-right: 150px;">
                     <button onclick="btn_click_predict(this)" class="btn btn-default w3-left">Predict</button>
                 </div>
-                <div class="w3-bar" style="padding-top: 30px;padding-left: 0px;padding-right: 0px;">
+                <div class="w3-bar" style="padding-top: 30px;padding-left: 100px;padding-right: 100px;">
                     <div class="w3-half" style="padding: 15px;">
                         <span style="font-size: 18px;">Response From Model</span>
                         <div class="w3-bar " style="border: 1px solid lightblue; border-radius: 10px; padding: 20px;">
@@ -144,20 +145,16 @@
 <script>
     var feature_list = {"columns": ["EURUSD_Open", "EURUSD_High", "EURUSD_Low", "USDJPY_Open", "USDJPY_High", "USDJPY_Low", "GBPUSD_Open", "GBPUSD_High", "GBPUSD_Low", "AUDUSD_Open", "AUDUSD_High", "AUDUSD_Low", "EURGBP_Open", "EURGBP_High", "EURGBP_Low", "EURCAD_Open", "EURCAD_High", "EURCAD_Low", "USDCNY_Open", "USDCNY_High", "USDCNY_Low", "USDINR_Open", "USDINR_High", "USDINR_Low"], "index": [0, 1, 2], "data": [[1.2033983469, 1.2040069103, 1.1944006681, 109.8300018311, 109.9899978638, 109.0500030518, 1.7238109112, 1.7272051573, 1.7183902264, null, null, null, 0.6973999739, 0.6977000237, 0.6937000155, 1.5615999699, 1.5666999817, 1.5542000532, 8.2670001984, 8.2672014236, 8.2670001984, 45.7089996338, 45.7280006409, 45.6150016785], [1.1961007118, 1.2109030485, 1.1946003437, 109.1800003052, 109.7799987793, 108.4800033569, 1.7190104723, 1.7321116924, 1.7172982693, null, null, null, 0.6955999732, 0.6991000175, 0.6941000223, 1.5598000288, 1.5707999468, 1.5590000153, 8.2572002411, 8.2672014236, 8.2572002411, 45.7089996338, 45.71900177, 45.5600013733], [1.208999753, 1.213003397, 1.2077003717, 108.7300033569, 108.7900009155, 108.0400009155, 1.7304929495, 1.7318116426, 1.7252088785, null, null, null, 0.6988000274, 0.7014999986, 0.6977000237, 1.5664999485, 1.5762000084, 1.564800024, 8.2672014236, 8.2672014236, 8.2671003342, 45.6319999695, 45.65599823, 45.4749984741]]}
     var data_domain = "table"
-    var apikey = "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb"
-    var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU"
-<<<<<<< HEAD
-   \* if (apikey == "_apikey_" && accesstoken == "_accesstoken_") {
-=======
-    if (apikey == "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb" && accesstoken == "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU") {
->>>>>>> parent of ffa7407 (Update README.md)
+    var apikey = "_apikey_"
+    var accesstoken = "_accesstoken_"
+    if (apikey == "_apikey_" && accesstoken == "_accesstoken_") {
         itm = document.getElementById("id_hide_if_api_key_embedded")
         itm.className = itm.className.replace("w3-hide", "w3-show")
     }
     else {
         itm = document.getElementById("id_hide_if_api_key_embedded")
         itm.className = itm.className.replace("w3-show", "w3-hide")
-    }*\
+    }
     document.getElementById("apikey").value = apikey
     document.getElementById("accesstoken").value = accesstoken
     var req_count = 1
