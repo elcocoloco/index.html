@@ -70,7 +70,7 @@
                 <div class="w3-bar" style="padding-left: 350px;padding-right: 150px;">
                     <button onclick="btn_click_predict(this)" class="btn btn-default w3-left">Predict</button>
                 </div>
-                <div class="w3-bar" style="padding-top: 30px;padding-left: 0px;padding-right: 0px;">
+                <div class="w3-bar" style="padding-top: 30px;padding-left: 100px;padding-right: 100px;">
                     <div class="w3-half" style="padding: 15px;">
                         <span style="font-size: 18px;">Response From Model</span>
                         <div class="w3-bar " style="border: 1px solid lightblue; border-radius: 10px; padding: 20px;">
@@ -147,7 +147,7 @@
     var data_domain = "table"
     var apikey = "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb"
     var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU"
-    if (apikey == "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb" && accesstoken == "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyIxIjoiMV9rZHVib3ZldHNreWlnbWFpbGNvbV9iNDU1OWI3Y2QwMDI0MTQwOTI2YTIxMjI4NzU1ZjY2YSJ9.3LcDZxKUsUo5YMOQD3P_2RPdvQZ2RSIin7M1ZOndmLU") {
+    if (apikey == "_apikey_" && accesstoken == "_accesstoken_") {
         itm = document.getElementById("id_hide_if_api_key_embedded")
         itm.className = itm.className.replace("w3-hide", "w3-show")
     }
@@ -171,7 +171,7 @@
     function btn_click_predict(e) {
         apikey = document.getElementById("apikey").value
         accesstoken = document.getElementById("accesstoken").value
-        if (apikey == "94815e7ca9b4456dbc755f310ab925178e91a8c485e84f7db72f989be85008fb") {
+        if (apikey == "_apikey_") {
             show()
             itm = document.getElementById("id_mlos_predict_log")
             spn = document.createElement("div")
