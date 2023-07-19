@@ -217,7 +217,7 @@ data["data"].push(dtx)
                     itm = document.getElementById("id_mlos_predict_log")
                     spn = document.createElement("div")
                     spn.setAttribute("class", "w3-bar")
-                    spn.innerHTML = "[" + req_count + "]" + " - Unauthorized "
+                    spn.innerHTML = "[" + req_count + "]" + " - Unauthorized " + this.responseText
                     itm.insertBefore(spn, itm.childNodes[0]);
                 }
                 if (resp.success == true) {
