@@ -47,11 +47,11 @@
                         <div id="id_mlos_prediction">
                             <div class="form-group">
                                 <label for="apikey">apikey:</label>
-                                <input type="password" value="13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89" id="apikey" class="form-control" name="apikey">
+                                <input type="password" value="_apikey_" id="apikey" class="form-control" name="apikey">
                             </div>
                             <div class="form-group">
                                 <label for="accesstoken">accesstoken:</label>
-                                <input type="password" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJEQVdlYnNpdGUzIjoiREFXZWJzaXRlM19rZHVib3ZldHNreWlnbWFpbGNvbV83Nzk4YTk1N2NjMzA0NDg4ODFmNWMxNjVkOTQzYmUyNyJ9.lzw5Y-ZyYAaLV50HcXfDMzpgJsngM_B2mFO7ABqbDv8" id="accesstoken" class="form-control"
+                                <input type="password" value="_accesstoken_" id="accesstoken" class="form-control"
                                     name="accesstoken">
                             </div>
                         </div>
@@ -147,7 +147,7 @@
     var data_domain = "table"
     var apikey = "13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89"
     var accesstoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJEQVdlYnNpdGUzIjoiREFXZWJzaXRlM19rZHVib3ZldHNreWlnbWFpbGNvbV83Nzk4YTk1N2NjMzA0NDg4ODFmNWMxNjVkOTQzYmUyNyJ9.lzw5Y-ZyYAaLV50HcXfDMzpgJsngM_B2mFO7ABqbDv8"
-    if (apikey == "13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89" && accesstoken == "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJEQVdlYnNpdGUzIjoiREFXZWJzaXRlM19rZHVib3ZldHNreWlnbWFpbGNvbV83Nzk4YTk1N2NjMzA0NDg4ODFmNWMxNjVkOTQzYmUyNyJ9.lzw5Y-ZyYAaLV50HcXfDMzpgJsngM_B2mFO7ABqbDv8") {
+    if (apikey == "_apikey_" && accesstoken == "_accesstoken_") {
         itm = document.getElementById("id_hide_if_api_key_embedded")
         itm.className = itm.className.replace("w3-hide", "w3-show")
     }
@@ -171,7 +171,7 @@
     function btn_click_predict(e) {
         apikey = document.getElementById("apikey").value
         accesstoken = document.getElementById("accesstoken").value
-        if (apikey == "13dfc54b968f48cdadb6fbcf621bc8186c2755439cde4d939d1d3e01d78f8c89") {
+        if (apikey == "_apikey_") {
             show()
             itm = document.getElementById("id_mlos_predict_log")
             spn = document.createElement("div")
@@ -217,7 +217,7 @@ data["data"].push(dtx)
                     itm = document.getElementById("id_mlos_predict_log")
                     spn = document.createElement("div")
                     spn.setAttribute("class", "w3-bar")
-                    spn.innerHTML = "[" + req_count + "]" + " - Unauthorized " + this.responseText
+                    spn.innerHTML = "[" + req_count + "]" + " - Unauthorized "
                     itm.insertBefore(spn, itm.childNodes[0]);
                 }
                 if (resp.success == true) {
